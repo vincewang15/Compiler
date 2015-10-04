@@ -1,4 +1,4 @@
-lab 3
+Compiler
 Shilai Lu
 Chunyang Zhu
 Botao Wang
