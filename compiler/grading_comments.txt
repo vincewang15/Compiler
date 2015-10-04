@@ -1,0 +1,96 @@
+Lab: 3
+Authors: Shilai Lu, Botao Wang, and Chunyang Zhu
+Graded by: Chris Gill
+Score: 101/100 (96 + 5 extra credit)
+Comments:
+
+   Great lab!
+
+   Code structure and implementation:
+
+   Nicely structured and well commented code!
+
+   Compilation:
+
+   The code compiled with no errors or warnings.
+
+   Performance and testing:
+
+   The program ran correctly in my tests except for:
+
+   -1 The program accepted a screen size of 0 as a command line argument, but then
+   did not display a list of Horn clauses even after valid ones were processed.
+
+   -3 The set and randomize commands did not operate correctly when dealing with
+   variables that were not already in the symbol table - instead of having the
+   desired effect they set the variables to 0 which required re-issuing the same 
+   commands a second time:
+
+input commands: set z 10
+new BOUND variable added! With value attribute 0
+input commands: randomize b
+b value changed to 7238
+input commands: randomize a 50
+a value changed to 15
+input commands: randomize x
+new BOUND variable added! With value attribute 7306
+input commands: randomize y 40
+new BOUND variable added! With value attribute 31
+input commands: print
+Symbol Table:
+father 1 2
+father 2 3
+mother 3 4
+mother 4 5
+a 15
+b 7238
+father a b
+c 9
+mother b c
+parent X Y
+father X Y
+mother X Y
+ancestor X Y
+parent X Z
+ancestor Z Y
+q 0
+ok B q 7
+z 0
+x 0
+y 0
+input commands: set z 10
+value changed!
+input commands: randomize y
+y value changed to 7444
+input commands: randomize x 20
+x value changed to 5
+input commands: print
+Symbol Table:
+father 1 2
+father 2 3
+mother 3 4
+mother 4 5
+a 15
+b 7238
+father a b
+c 9
+mother b c
+parent X Y
+father X Y
+mother X Y
+ancestor X Y
+parent X Z
+ancestor Z Y
+q 0
+ok B q 7
+z 10
+x 5
+y 7444
+
+   Project report and documentation:
+
+   Testing description is too brief, especially for a final project, but otherwise ok.
+
+   Extra credit: +5
+
+   Nice job!
